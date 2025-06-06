@@ -34,16 +34,16 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-center lg:justify-end xl:col-span-3">
-              <div className="relative aspect-video h-auto w-full max-w-[600px] overflow-hidden rounded-xl border shadow-2xl">
+                <div className="relative aspect-video h-auto w-full max-w-[600px] overflow-hidden rounded-xl border shadow-2xl flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  width={600}
-                  height={400}
-                  alt="Tech services illustration"
-                  className="object-cover"
+                  src="/Geeky-(blue).png"
+                  width={550}
+                  height={850}
+                  alt="Geeky Soluions Logo"
+                  className="object-contain"
                   priority
                 />
-              </div>
+                </div>
             </div>
           </div>
         </div>

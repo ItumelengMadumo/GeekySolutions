@@ -24,11 +24,12 @@ export default function About() {
             <div className="flex items-center justify-center">
               <div className="relative aspect-video h-auto w-full max-w-[600px] overflow-hidden rounded-xl shadow-2xl">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  width={600}
-                  height={400}
-                  alt="Our team"
-                  className="object-cover"
+                  src="/1.png"
+                  width={550}
+                  height={950}
+                  alt="Tech services illustration"
+                  className="object-contain"
+                  priority
                 />
               </div>
             </div>

@@ -25,6 +25,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/services": {
       "experimentalBypassFor": [
         {
@@ -96,37 +120,13 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "e2afc851b850cc12d156aa0ba402d159",
-    "previewModeSigningKey": "b6e09612cd43e867b5c99d1ef35a40cfc42a5bbd2af98a0a43b7fb695257db5c",
-    "previewModeEncryptionKey": "c8a6b2c6585f3ae033269c9241580fb26dc4b4b3fe9c78816d9e3b03e5fc7937"
+    "previewModeId": "38839e2d4db238f523190d828f12073c",
+    "previewModeSigningKey": "fa4f7642d63d83c753ca8e14b88caef6b25d4e428d3b91ff773264b049f9df91",
+    "previewModeEncryptionKey": "7caa83285d4e44b9ee42d3815f460bda4d38354e8124d6dd836182467814f636"
   }
 }

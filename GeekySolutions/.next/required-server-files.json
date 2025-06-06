@@ -97,7 +97,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\Tumi\\OneDrive\\Desktop\\DEV\\Projects\\Geeky Solutions\\GeekySolutions",
+    "outputFileTracingRoot": "C:\\Users\\Tumi\\OneDrive\\Desktop\\DEV\\Projects\\GeekySolutions\\GeekySolutions",
     "experimental": {
       "allowedDevOrigins": [],
       "nodeMiddleware": false,
@@ -176,7 +176,7 @@
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
       "turbo": {
-        "root": "C:\\Users\\Tumi\\OneDrive\\Desktop\\DEV\\Projects\\Geeky Solutions\\GeekySolutions"
+        "root": "C:\\Users\\Tumi\\OneDrive\\Desktop\\DEV\\Projects\\GeekySolutions\\GeekySolutions"
       },
       "typedRoutes": false,
       "typedEnv": false,
@@ -282,7 +282,7 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js"
   },
-  "appDir": "C:\\Users\\Tumi\\OneDrive\\Desktop\\DEV\\Projects\\Geeky Solutions\\GeekySolutions",
+  "appDir": "C:\\Users\\Tumi\\OneDrive\\Desktop\\DEV\\Projects\\GeekySolutions\\GeekySolutions",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

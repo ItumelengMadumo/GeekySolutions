@@ -9,6 +9,8 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Clock, Mail, MapPin, Phone } from "lucide-react"
 import { useState } from "react"
+import emailjs from '@emailjs/browser' 
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,33 +21,51 @@ export default function Contact() {
     message: "",
   })
 
-  const [formStatus, setFormStatus] = useState<null | "success" | "error">(null)
+  const [formStatus, setFormStatus] = useState<null | "success" | "error" | "loading">(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Simulate form submission
-    setTimeout(() => {
-      setFormStatus("success")
-      // Reset form after successful submission
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      })
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
 
-      // Clear success message after 5 seconds
-      setTimeout(() => {
-        setFormStatus(null)
-      }, 5000)
-    }, 1000)
+  setFormStatus("loading")
+
+  const templateParams = {
+    from_name: formData.name,
+    from_email: formData.email,
+    phone: formData.phone,
+    subject: formData.subject,
+    message: formData.message,
   }
+
+  try {
+    const result = await emailjs.send(
+      'service_3bx6iwh',     // 🔧 Your EmailJS service ID
+      'template_7qf3xju',    // 🔧 Your EmailJS template ID
+      templateParams,
+      'd80kN2o9oNPlexb17'      // 🔧 Your EmailJS public key
+    )
+
+    console.log('Email sent:', result.text)
+
+    setFormStatus("success")
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    })
+
+    setTimeout(() => setFormStatus(null), 5000)
+  } catch (error) {
+    console.error('EmailJS error:', error)
+    setFormStatus("error")
+  }
+}
 
   return (
     <main className="flex-1">
