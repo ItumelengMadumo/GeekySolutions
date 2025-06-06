@@ -93,11 +93,11 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
-              <li>
+              {/*<li>
                 <Link href="/shop" className="text-muted-foreground hover:text-foreground">
                   Shop
                 </Link>
-              </li>
+              </li>*/}
             </ul>
           </div>
           <div>

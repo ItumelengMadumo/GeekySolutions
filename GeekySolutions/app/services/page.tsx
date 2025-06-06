@@ -144,7 +144,7 @@ export default function Services() {
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-blue-700"></div>
-                  <span className="text-gray-700">API Development</span>
+                  <span className="text-amber-600 font-semibold">Coming Soon:</span><span className="text-gray-700">API Development</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="h-2 w-2 rounded-full bg-blue-700"></div>
@@ -176,27 +176,34 @@ export default function Services() {
               <p className="flex-1 text-gray-600">
                 We identify and fix bugs in your existing applications to ensure optimal performance.
               </p>
+              <Link  href={"/contact"}  >
               <Button variant="outline" size="sm" className="mt-4">
                 Learn More
               </Button>
+              </Link>
+              
             </div>
             <div className="flex flex-col space-y-2 rounded-lg border bg-white p-6 shadow transition-all hover:shadow-lg">
               <h3 className="text-xl font-bold">Performance Optimization</h3>
               <p className="flex-1 text-gray-600">
                 We improve the speed and efficiency of your websites and applications.
               </p>
+              <Link  href={"/contact"}  >
               <Button variant="outline" size="sm" className="mt-4">
                 Learn More
               </Button>
+              </Link>
             </div>
             <div className="flex flex-col space-y-2 rounded-lg border bg-white p-6 shadow transition-all hover:shadow-lg">
               <h3 className="text-xl font-bold">Regular Maintenance</h3>
               <p className="flex-1 text-gray-600">
                 We provide ongoing support to keep your digital assets up-to-date and secure.
               </p>
+              <Link  href={"/contact"}  >
               <Button variant="outline" size="sm" className="mt-4">
                 Learn More
               </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -414,7 +421,7 @@ export default function Services() {
                 href="/contact"
                 className="inline-flex h-9 items-center justify-center rounded-md bg-amber-600 px-4 text-sm font-medium text-white shadow-sm transition-colors hover:bg-amber-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-600"
               >
-                Learn More
+              Contact Sales
               </Link>
             </div>
             <div className="flex flex-col rounded-lg border bg-white p-6 shadow-lg">

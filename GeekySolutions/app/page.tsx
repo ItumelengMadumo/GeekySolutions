@@ -235,7 +235,7 @@ export default function Home() {
         </div>
       </section>*/}
 
-      {/* Shop Teaser */}
+      {/* Shop Teaser
       <section className="bg-gradient-to-b from-white to-amber-50 py-12 md:py-16 lg:py-20">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
@@ -296,7 +296,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }
