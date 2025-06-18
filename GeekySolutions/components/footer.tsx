@@ -53,14 +53,14 @@ export default function Footer() {
                   />
                   <span className="sr-only">Twitter</span>
                 </Link>
-                <Link href="#" target="_blank" rel="noreferrer">
+                <Link href="https://www.instagram.com/geeky_solutions/" target="_blank" rel="noreferrer">
                   <Instagram
                     className="h-5 w-5 text-muted-foreground transition-colors hover:text-blue-700"
                     aria-hidden="true"
                   />
                   <span className="sr-only">Instagram</span>
                 </Link>
-                <Link href="#" target="_blank" rel="noreferrer">
+                <Link href="" target="_blank" rel="noreferrer">
                   <Linkedin
                     className="h-5 w-5 text-muted-foreground transition-colors hover:text-blue-700"
                     aria-hidden="true"
@@ -124,10 +124,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services#it-equipment" className="text-muted-foreground hover:text-foreground">
-                  IT Equipment (Coming Soon)
+                <Link href="/services#digital-marketing" className="text-muted-foreground hover:text-foreground">
+                  Digital Marketing (Coming Soon)
                 </Link>
               </li>
+              <li>
+                <Link href="/services#it-equipment" className="text-muted-foreground hover:text-foreground">
+                  IT Procurement & Sales (Coming Soon)
+                </Link>
+              </li>
+              
             </ul>
           </div>
           <div>
