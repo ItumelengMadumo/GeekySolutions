@@ -10,7 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Cpu, Menu, ShoppingCart } from "lucide-react"
+import { Cpu, Menu } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -45,11 +45,6 @@ export default function Header() {
               <Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-blue-700">
                 Contact
               </Link>
-                {/* <Link href="/shop" onClick={() => setIsOpen(false)}
-                className="text-amber-600 hover:text-amber-700 font-semibold"
-                >
-                Shop
-                </Link> */}
             </nav>
           </SheetContent>
         </Sheet>
@@ -117,6 +112,26 @@ export default function Header() {
                       </NavigationMenuLink>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/services#digital-marketing" legacyBehavior passHref>
+                      <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                        <div className="text-sm font-medium leading-none">Digital Marketing</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          SEO, social media, and online advertising
+                        </p>
+                      </NavigationMenuLink>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services#procurement" legacyBehavior passHref>
+                      <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                        <div className="text-sm font-medium leading-none">IT Procurement</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Equipment sourcing and procurement services
+                        </p>
+                      </NavigationMenuLink>
+                    </Link>
+                  </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -127,29 +142,9 @@ export default function Header() {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-            {/*<NavigationMenuItem>
-              <Link href="/shop" legacyBehavior passHref>
-                <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-amber-50 px-4 py-2 text-sm font-medium text-amber-800 transition-colors hover:bg-amber-100 hover:text-amber-900 focus:bg-amber-100 focus:text-amber-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-amber-100/50 data-[state=open]:bg-amber-100/50">
-                  Shop
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>*/}
           </NavigationMenuList>
         </NavigationMenu>
         <div className="ml-auto flex items-center gap-2">
-         {/**<Link href="/shop/cart" className="relative">
-            <Button variant="ghost" size="icon">
-              <ShoppingCart className="h-5 w-5" />
-              <span className="sr-only">Shopping Cart</span>
-              <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-amber-600 text-[10px] font-medium text-white">
-                3
-              </span>
-            </Button>
-          </Link>
-          
-          */
-
-         } 
           <Link href="/contact">
             <Button variant="default" className="hidden sm:flex">
               Get a Quote
